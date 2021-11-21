@@ -11,7 +11,7 @@ class Led2x4
         void begin(int dataPin, int clockPin);
         void refresh(void);
         
-        void write(uint8_t digit, uint8_t value);
+        void write(uint8_t digit, uint8_t value, boolean dot = false);
         
         
     private:
@@ -22,4 +22,3 @@ class Led2x4
 };
 
 #endif
-
